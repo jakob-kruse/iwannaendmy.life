@@ -6,6 +6,7 @@
   import type { IHotline, IHotlineCountry } from "../hotlines";
   import Flag from "./Flag.svelte";
   import Hotline from "./Hotline.svelte";
+  import MdLink from "svelte-icons/md/MdLink.svelte";
 
   export let hotlineCountry: IHotlineCountry;
 
@@ -34,6 +35,11 @@
       {#if quickHotline.mail}
         <a href="mailto:{quickHotline.mail}" class="icon" transition:slide>
           <MdEmail />
+        </a>
+      {/if}
+      {#if quickHotline.website}
+        <a href="{quickHotline.website}" class="icon" transition:slide>
+          <MdLink />
         </a>
       {/if}
       <div

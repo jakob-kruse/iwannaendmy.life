@@ -3,7 +3,7 @@
   export let values: string | string[];
   export let hrefPrefix: string | null = null;
 
-  $: _values = Array.isArray(values) ? values : [values];
+  $: _values = values.split(';')
 </script>
 
 {#each _values as value, index}
