@@ -143,13 +143,13 @@
       &_description {
         font-style: italic;
         color: gray;
+        margin-bottom: 8px;
       }
 
       &_attributes {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 8px;
       }
     }
   }
